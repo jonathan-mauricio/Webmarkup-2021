@@ -12,10 +12,10 @@
             <title>Tickets</title>
             <link rel="stylesheet" type="text/css" href="css/tickets.css">
     </head>
-    <body>
-            <header>
-                <img src="img/planeicon.png" alt="Plane Icon" title="A Plane Icon">
-                <h1>FlyCheap</h1>
+    <body class="wrapper">
+            <header class="header">
+                <img src="img/planeicon.png" alt="Plane Icon" title="A Plane Icon" class="icon">
+                <h1>FlyCheap!</h1>
                 <h2>Discover cheaper flying!</h2>
             </header>    
 
@@ -45,7 +45,7 @@
                 </ul>
             </nav>
 
-            <nav id="basenav">
+            <nav id="basenav" class="basenav">
                 <ul>
                     <li>
                         <a href="index.html">
@@ -65,9 +65,14 @@
                 </ul>
             </nav>
 
+            <section class="ticketarticle" id="ticketarticle">
+                <h3>Tickets</h3>
+                <p>This is where you can easily look at our currently available destinations for sale, the cheapest prices!</p>
+            </section>
+
             <figure>
-                <table>
-                    <thead>
+                <table class="table bigger-container">
+                    <thead class="tablehead">
                         <tr>
                             <th>
                                 Destination
@@ -86,7 +91,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="tablebody">
                         <tr>
                             <td>
                                 Aruba
@@ -429,23 +434,27 @@
                         </tr>
                     </tbody>
                 </table>
-                <figcaption>Source of Data&copy; 2021 TUI.nl</figcaption>
+                <footer class="tablefooter">
+                    Source of Data&copy; 2021 TUI.nl
+                </footer>
             </figure>
 
-            <section>
-                <aside>
-                    <figure>
-                    <a href="https://www.tui.nl">
-                        <img src="img/ticketspicture1.jpg" alt="Image of Sydney Opera house over waterfront" title="Sydney Opera house on the waterfront">
-                        <img src="img/ticketspicture2.jpg" alt="Image of Sydney Opera house with an art installation" title="Syndey Opera house art installation">
-                        <img src="img/ticketspicture3.jpeg" alt="Image of Sydney" title="Sydney">
-                    </a>
-                    <figcaption>&copy;Australia Media Group</figcaption>
-                    </figure>
-                </aside>
-            </section>
+            <figure>
+                <a href="https://www.tui.nl" class="products bigger-container">
+                    <aside>
+                        <img src="img/ticketspicture1.jpg" alt="Image of Sydney Opera house over waterfront" title="Sydney Opera house on the waterfront" id="hiddenproduct">
+                    </aside>
+                    <aside class="product-container">
+                        <img src="img/ticketspicture2.jpg" alt="Image of Sydney Opera house with an art installation" title="Syndey Opera house art installation" class="product-image-1">
+                    </aside>
+                    <aside class="product-container">
+                        <img src="img/ticketspicture3.jpeg" alt="Image of Sydney" title="Sydney" class="product-image-2">
+                    </aside>
+                </a>
+                <figcaption>&copy;Australian Media Group</figcaption>
+            </figure>
 
-            <footer id="copyright-info">
+            <footer id="copyright-info" class="footer">
                 &copy;Jonathan Mauricio
             </footer>
             

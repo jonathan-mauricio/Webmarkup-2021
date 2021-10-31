@@ -73,6 +73,8 @@ body
     font-family: 'Notable';
     text-transform: uppercase;
     color: #032FF7;
+    word-spacing: 1.5em;
+    text-align: left;
 }
 
 #cookie

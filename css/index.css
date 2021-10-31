@@ -54,10 +54,6 @@
 @media screen and (min-width: 1280px)
 {
 
-    .header
-    {
-        order: -1;
-    }
 
     #basenav
     {
@@ -174,6 +170,11 @@ video, .icon, .basenav
     display: inline-block;
 }
 
+.header h1
+{
+    letter-spacing: 5px;
+}
+
 .hamburger-menu
 {
     text-align: left;
@@ -186,7 +187,7 @@ video, .icon, .basenav
 .hamburger-menu a
 {
     text-decoration: none;
-    color: cmyk(0%, 22%, 83%, 0%); /*pantome 123c, hex #FFC72B*/
+    color: #F55105;
 }
 
 .hamburger-menu ul
@@ -235,6 +236,8 @@ video, .icon, .basenav
     font-family: 'Notable';
     text-transform: uppercase;
     color: #032FF7;
+    word-spacing: 1.5em;
+    text-align: left;
 }
 
 #cookie
@@ -247,5 +250,12 @@ video, .icon, .basenav
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+@media print
+{
+    .body {
+        color: device-cmyk(0 22% 83% 0%)
+    }
 }
 

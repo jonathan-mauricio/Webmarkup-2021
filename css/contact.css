@@ -25,6 +25,8 @@
     .form form, input, label
     {
         flex: 1 1 0px;
+        width: 90%;
+        padding: 10px;
         
     }
 
@@ -32,12 +34,17 @@
     {
         text-align: center;
         margin: auto;
-        width: 50%;
+        padding: 20px;
     }
 
     .products a
     {
         flex: 1 1 0px;
+    }
+
+    .products
+    {
+        max-width: 450px;
     }
 
     .tablet-flex 
@@ -104,17 +111,22 @@ img
 {
     margin: 5px;
     text-align: left;
+    width: 90%;
 }
 
 .form input 
 {
     margin: 10px;
     text-align: left;
+    width: 90%;
 }
 
 #formsubmit 
 {
     text-align: center;
+    background-color: lightseagreen;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .products
@@ -156,6 +168,11 @@ img
     display: none;
 }
 
+.header h1
+{
+    letter-spacing: 5px;
+}
+
 .hamburger-menu
 {
     text-align: left;
@@ -168,7 +185,7 @@ img
 .hamburger-menu a
 {
     text-decoration: none;
-    color: cmyk(0%, 22%, 83%, 0%); /*pantome 123c, hex #FFC72B*/
+    color: #F55105;
 }
 
 .hamburger-menu ul
@@ -217,6 +234,8 @@ img
     font-family: 'Notable';
     text-transform: uppercase;
     color: #032FF7;
+    word-spacing: 1.5em;
+    text-align: left;
 }
 
 #cookie
@@ -229,5 +248,12 @@ img
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+@media print
+{
+    .body {
+        color: device-cmyk(0 22% 83% 0%)
+    }
 }
 
