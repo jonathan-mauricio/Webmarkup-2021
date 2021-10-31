@@ -246,8 +246,7 @@ video, .icon, .basenav {
 
     color: #FFF;
     text-transform: uppercase;
-    background-color:  #FA0;
-    opacity: .5;
+    background-color: rgba(255, 170, 0, 0.5); /*FA0 RGB */
     z-index: 999;
     position: fixed;
     bottom: 0;
