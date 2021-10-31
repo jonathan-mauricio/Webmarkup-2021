@@ -1,33 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
-@media screen and (min-width: 600px)
-{
-    #hamburger-menu
-    {
-        display: none;
-    }
-    
-    #basenav
-    {
-        display: flex;
-        order: 2;
-        flex: 0 0 100%;
-    }
-
-
-}
-
-@media screen and (min-width: 1280px)
-{
-
-
-    #basenav
-    {
-        flex: 0 0 100%;
-    }
-
-}
-
 body
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +42,6 @@ img
 .grid-article-5
 {
     grid-area: article1;
-    text-align: center;
 }
 
 .grid-article-3
@@ -214,5 +185,45 @@ img
     .body {
         color: device-cmyk(0 22% 83% 0%)
     }
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    #hamburger-menu
+    {
+        display: none;
+    }
+    
+    .wrapper 
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .4fr 50px .4fr 3.5fr 1.5fr 1fr;
+    }
+
+    .icon {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .basenav {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px)
+{
+
+
+    #basenav
+    {
+        flex: 0 0 100%;
+    }
+
 }
 
