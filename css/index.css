@@ -85,6 +85,7 @@
         justify-content: center;
         font-size: 2.5em;
         padding-top: 250px;
+        flex-direction: column;
     }
 
     .desktop-flex
@@ -117,6 +118,7 @@ video
     max-width: 100%;
     height: auto;
     max-height: 500px;
+    margin: 10px;
 }
 
 .wrapper
@@ -129,12 +131,13 @@ video
 
 .header
 {
-    flex: 50%;
+    flex: 1;
+    flex-wrap: nowrap;
 }
 
 .footer
 {
-    order: 99;
+    order: 5;
 }
 
 .upcoming , .articletext
@@ -147,9 +150,9 @@ video, .icon, .basenav
     display: none;
 }
 
-.bestdestinations h4
+.bestdestinations h3
 {
-    color: #2C2525;
+    color: #2C3696;
 }
 
 .basenav    
@@ -174,8 +177,10 @@ video, .icon, .basenav
 .hamburger-menu
 {
     text-align: left;
-    flex: 50%;
+    flex: 1;
     position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .hamburger-menu a

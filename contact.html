@@ -12,9 +12,9 @@
             <title>Contact</title>
             <link rel="stylesheet" type="text/css" href="css/contact.css">
     </head>
-    <body>
-            <header>
-                <img src="img/planeicon.png" alt="Plane Icon" title="A Plane Icon">
+    <body class="wrapper">
+            <header class="header">
+                <img src="img/planeicon.png" alt="Plane Icon" title="A Plane Icon" class="icon">
                 <h1>FlyCheap</h1>
                 <h2>Discover cheaper flying!</h2>
             </header>    
@@ -26,26 +26,6 @@
                 <span></span>
                 <span></span>
 
-                <ul>
-                    <li>
-                        <a href="bestdestinations.html">
-                            Best Destinations
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tickets.html">
-                            Tickets
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav id="basenav">
                 <ul>
                     <li>
                         <a href="index.html">
@@ -65,45 +45,65 @@
                 </ul>
             </nav>
 
-            <section>
-                <article>
-                    <header>
-                        <h3>Contact Information</h3>
-                    </header>
-                    <p>Email: superrealemail@gmail.com</p>
-                    <p>Phone Number: 065927069041</p>
+            <nav id="basenav" class="basenav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bestdestinations.html">
+                            Best Destinations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tickets.html">
+                            Tickets
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="contactinformation">
+                <article> 
+                    <h3>Contact us:</h3> 
                 </article>
             </section>
 
-            <section>
-            <form>
-                <fieldset>
-                    <legend>Ask a question!</legend>
-                    <label for="name">Enter your name:</label>
-                    <input type="text" name="name" id="name" required>
-                    <label for="email">Enter your email:</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="message">Enter your question:</label>
-                    <input type="text" name="message" id="message" required>
-                    <input type="submit" value="Submit Question!">
-                </fieldset>
-            </form>
+            <section class="form tablet-flex">
+                <form>
+                        <fieldset>
+                            <span>
+                            <legend>
+                                <h2>Ask a question!</h2>
+                            </legend>
+                            <label for="name">Enter your name:</label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="email">Enter your email:</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="message">Enter your question:</label>
+                            <input type="text" name="message" id="message" required>
+                            <input type="submit" value="Submit Question!" id="formsubmit">
+                            </span>
+                        </fieldset>
+                </form>
             </section>
 
-            <section>
+            <section class="products tablet-flex"> 
                 <aside>
                     <figure>
-                    <a href="https://www.tui.nl">
-                        <img src="img/contactpicture1.jpg" alt="Image of Oceanside Restaurant" title="Oceanside Restaurant">
-                        <img src="img/contactpicture2.jpg" alt="Image of Oceanside Restaurant #2" title="Oceanside Restaurant">
-                        <img src="img/contactpicture3.jpg" alt="Image of small man-made beach" title="Man-madebeach next to the ocean">
-                    </a>
-                    <figcaption>&copy;Cura&ccedil;ao Media Group</figcaption>
+                        <a href="https://www.tui.nl">
+                            <img src="img/contactpicture1.jpg" alt="Image of Oceanside Restaurant" title="Oceanside Restaurant">
+                            <img src="img/contactpicture2.jpg" alt="Image of Oceanside Restaurant #2" title="Oceanside Restaurant">
+                            <img src="img/contactpicture3.jpg" alt="Image of small man-made beach" title="Man-madebeach next to the ocean">
+                        </a>
+                        <figcaption>&copy;Cura&ccedil;ao Media Group</figcaption>
                     </figure>
                 </aside>
             </section>
 
-            <footer id="copyright-info">
+            <footer class="footer" id="copyright-info">
                 &copy;Jonathan Mauricio
             </footer>
             
