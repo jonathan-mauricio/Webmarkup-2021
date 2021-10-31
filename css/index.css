@@ -2,25 +2,25 @@
 
 @media screen and (min-width: 600px)
 {
-    #hamburger-menu
-    {
+    #hamburger-menu {
+        
         display: none;
     }
     
-    #basenav
-    {
+    #basenav {
+
         display: flex;
         order: 2;
         flex: 0 0 100%;
     }
 
-    #video
-    {
+    #video {
+
         display: flex;
         order: 3;
     }
-    .header > img
-    {
+    .header > img {
+        
         display: flex;
         order: 1;
         flex: 0 0 100%;
@@ -28,24 +28,23 @@
         max-width: 750px;
     }
     
-    .upcoming
-    {
+    .upcoming {
         order: 2;
         flex: 0 0 100%;
     }
 
-    .bestdestinations 
-    {
+    .bestdestinations {
+
         order: 3;
     }
 
-    .articleimage
-    {
+    .articleimage {
+
         float: left;
     }
 
-    .articletext
-    {
+    .articletext {
+
         clear: both;
     }
 
@@ -55,61 +54,61 @@
 {
 
 
-    #basenav
-    {
+    #basenav {
+
         flex: 0 0 100%;
     }
 
-    .articleimage
-    {
+    .articleimage {
+
         float: right;
     }
 
-    .articletext
-    {
+    .articletext {
+
         clear: both;
     }
 
-    .bestdestinations
-    {
+    .bestdestinations {
+
         justify-content: left;
         flex-direction: column;
     }
 
-    .upcoming
-    {
+    .upcoming {
+
         justify-content: center;
         font-size: 2.5em;
         padding-top: 250px;
         flex-direction: column;
     }
 
-    .desktop-flex
-    {
+    .desktop-flex {
+
         order: 4;
         display: flex;
         flex: 50%;
     }
 }
 
-body
-{
+body {
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: #038CF7;
     color: #FFF;
 }
 
-img
-{
+img {
+
     width: 100%;
     height: auto;
     max-height: 500px;
     max-width: 750px;
 }
 
-video
-{
+video {
+
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -117,66 +116,67 @@ video
     margin: 10px;
 }
 
-.wrapper
-{
+.wrapper {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 
-.header
-{
+.header {
+
     flex: 1;
     flex-wrap: nowrap;
 }
 
-.footer
-{
+.footer {
+
     order: 5;
 }
 
-.upcoming , .articletext
-{
+.upcoming , .articletext {
+
     line-height: 1.5em;
 }
 
-video, .icon, .basenav
-{
+video, .icon, .basenav {
+
     display: none;
 }
 
-.bestdestinations h3
-{
+.bestdestinations h3 {
+
     color: #2C3696;
 }
 
-.basenav    
-{
+.basenav {
+
     background-color: #161CDA;
+    text-align: center;
 }
 
-.basenav  a, ul
-{
+.basenav  a, ul {
+
     text-decoration: none;
     list-style: none;
     color: white;
     text-align: center;
 }
 
-.basenav li
-{
+.basenav li {
+
     text-indent: 32px;
     display: inline-block;
 }
 
-.header h1
-{
+.header h1 {
+
     letter-spacing: 5px;
 }
 
-.hamburger-menu
-{
+.hamburger-menu {
+
     text-align: left;
     flex: 1;
     position: relative;
@@ -184,14 +184,14 @@ video, .icon, .basenav
     overflow: hidden;
 }
 
-.hamburger-menu a
-{
+.hamburger-menu a {
+
     text-decoration: none;
     color: #F55105;
 }
 
-.hamburger-menu ul
-{
+.hamburger-menu ul {
+
     opacity: 0;
     background-color: lightblue;
     border-radius: 25px;
@@ -200,8 +200,8 @@ video, .icon, .basenav
     padding-left: 20px;
 }
 
-.hamburger-menu span
-{
+.hamburger-menu span {
+
     display: flex;
     position: relative;
     width: 15px;
@@ -212,8 +212,8 @@ video, .icon, .basenav
 
 }
 
-.hamburger-menu input
-{
+.hamburger-menu input {
+
     display: flex;
     width: 40px;
     height: 30px;
@@ -225,14 +225,14 @@ video, .icon, .basenav
     cursor: pointer;
 }
 
-.hamburger-menu input:checked ~ ul
-{
+.hamburger-menu input:checked ~ ul {
+
     opacity: 1;
 }
 
 /* Footer information */
-#copyright-info 
-{
+#copyright-info {
+
     font-family: 'Notable';
     text-transform: uppercase;
     color: #032FF7;
@@ -240,8 +240,8 @@ video, .icon, .basenav
     text-align: left;
 }
 
-#cookie
-{
+#cookie {
+
     color: #FFF;
     text-transform: uppercase;
     background-color:  #FA0;

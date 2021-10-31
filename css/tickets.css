@@ -2,26 +2,26 @@
 
 @media screen and (min-width: 600px)
 {
-    #hamburger-menu, #hiddenproduct
-    {
+    #hamburger-menu, #hiddenproduct {
+        
         display: none;
     }
     
-    #ticketarticle
-    {
+    #ticketarticle {
+
         display: flex;
         flex-direction: column;
         flex: 100%;
     }
 
-    #basenav
-    {
+    #basenav {
+
         display: flex;
         flex: 0 0 100%;
     }
 
-    .header > img
-    {
+    .header > img {
+
         display: flex;
         order: 1;
         flex: 0 0 100%;
@@ -29,19 +29,19 @@
         max-width: 750px;
     }
 
-    .products
-    {
+    .products {
+
         display: flex;
     }
 
-    .product-container
-    {
+    .product-container {
+
         flex: 1 1 0px;
         margin: 10px;
     }
 
-    .footer
-    {
+    .footer {
+
         flex: 100%;
     }
 
@@ -50,118 +50,117 @@
 @media screen and (min-width: 1280px)
 {
 
-    #basenav
-    {
+    #basena {
+
         flex: 0 0 100%;
     }
 
-    #hiddenproduct
-    {
+    #hiddenproduct {
+
         display: flex;
         margin: 10px;
     }
 
-    .table
-    {
+    .table {
+
         flex: 1 1 0px;
         margin: auto;
         min-width: auto;
     }
 
-    .products
-    {
+    .products {
+
         flex-direction: column;
         flex: 1 1 0px;
         max-width: 450px;
     }
 
-    .bigger-container
-    {
+    .bigger-container {
+
         flex: 50%;
     }
 
 }
 
-body
-{
+body {
+    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: #038CF7;
     color: #FFF;
 }
 
-img
-{
+img {
+
     width: 100%;
     height: auto;
 }
-.wrapper
-{
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.table
-{
+.table {
+
     border: 3px solid black;
     background-color: lightslategray;
     margin: 5px;
 }
 
-.tablehead
-{
+.tablehead {
+
     background-color: darkgray;
 }
 
-.tablefooter
-{
+.tablefooter {
+
     margin-top: 5px;
 }
 
-.header
-{
+.header {
+
     flex: 1;
     flex-wrap: nowrap;
 }
 
-.footer
-{
+.footer {
+
     order: 5;
 }
 
 
-.icon, .basenav, .ticketarticle
-{
+.icon, .basenav, .ticketarticle {
+
     display: none;
 }
 
-.basenav    
-{
+.basenav {
+
     background-color: #161CDA;
 }
 
-.basenav  a, ul
-{
+.basenav  a, ul {
+
     text-decoration: none;
     list-style: none;
     color: white;
     text-align: center;
 }
 
-.basenav li
-{
+.basenav li {
+
     text-indent: 32px;
     display: inline-block;
 }
 
-.header h1
-{
+.header h1 {
+
     letter-spacing: 5px;
 }
 
-.hamburger-menu
-{
+.hamburger-menu {
+    
     text-align: left;
     flex: 1;
     position: relative;
@@ -169,14 +168,14 @@ img
     overflow: hidden;
 }
 
-.hamburger-menu a
-{
+.hamburger-menu a {
+
     text-decoration: none;
     color: #F55105;
 }
 
-.hamburger-menu ul
-{
+.hamburger-menu ul {
+
     opacity: 0;
     background-color: lightblue;
     border-radius: 25px;
@@ -185,8 +184,8 @@ img
     padding-left: 20px;
 }
 
-.hamburger-menu span
-{
+.hamburger-menu span {
+
     display: flex;
     position: relative;
     width: 15px;
@@ -197,8 +196,8 @@ img
 
 }
 
-.hamburger-menu input
-{
+.hamburger-menu input {
+
     display: flex;
     width: 40px;
     height: 30px;
@@ -210,14 +209,14 @@ img
     cursor: pointer;
 }
 
-.hamburger-menu input:checked ~ ul
-{
+.hamburger-menu input:checked ~ ul {
+
     opacity: 1;
 }
 
 /* Footer information */
-#copyright-info 
-{
+#copyright-info {
+
     font-family: 'Notable';
     text-transform: uppercase;
     color: #032FF7;
@@ -225,8 +224,8 @@ img
     text-align: left;
 }
 
-#cookie
-{
+#cookie {
+
     color: #FFF;
     text-transform: uppercase;
     background-color:  #FA0;
