@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+@media screen and (min-width: 480px)
+{
+    #hamburger-menu
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px)
+{
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #038CF7;
+    color: #FFF;
+}
+
+.basenav
+{
+    display: none;
+}
+
+.hamburger-menu
+{
+    display: block;
+    position: relative;
+    
+}
+
+.hamburger-menu ul
+{
+    opacity: 0;
+}
+
+.hamburger-menu span
+{
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 2px;
+    margin-bottom: 5px;
+    background: white;
+    z-index: 1;
+}
+
+.hamburger-menu input
+{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger-menu input:checked ~ ul
+{
+    opacity: 1;
+}
+
+/* Footer information */
+#copyright-info 
+{
+    font-family: 'Notable';
+    text-transform: uppercase;
+    color: #032FF7;
+}
+
+#cookie
+{
+    color: #FFF;
+    text-transform: uppercase;
+    background-color:  #FA0;
+    opacity: .5;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+

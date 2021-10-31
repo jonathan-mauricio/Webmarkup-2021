@@ -13,14 +13,40 @@
             <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
 
-    <body>
-            <header>
-                <img src="img/planeicon.png" alt="Plane Icon" title="A Plane Icon">
+    <body class="wrapper">
+            <header class="header">
+                <img src="img/planeicon.png" alt="Plane Icon" title="A Plane Icon" class="icon">
                 <h1>FlyCheap</h1>
                 <h2>Discover cheaper flying!</h2>
             </header>    
             
-            <nav>
+            <nav class="hamburger-menu" id="hamburger-menu"> 
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul>
+                    <li>
+                        <a href="bestdestinations.html">
+                            Best Destinations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tickets.html">
+                            Tickets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav id="basenav" class="basenav">
                 <ul>
                     <li>
                         <a href="bestdestinations.html">
@@ -40,78 +66,78 @@
                 </ul>
             </nav>
             
-            <video autoplay muted>
-                <source src="img/TRAVEL Motion Graphics.mp4" type="video/mp4">
-                <source src="img/TRAVEL-Motion-Graphics.ogg" type="video/ogg">
+            <video autoplay muted class="video" id="video">
+                <source src="img/travelvideo.mp4">
+                <source src="img/travelvideo.ogg" type="video/ogg">
                 Sorry, your browser can not support videos.
             </video>
             
-            <section>
+            <section class="bestdestinations desktop-flex">
                 <header>
                     <h3>Our top 3 destinations!</h3>
                 </header>
                 <article>
                     <header>
-                        <h4>
+                        <h4 class ="articletext">
                             Cura&ccedil;ao
                         </h4>                  
                     </header>
-                    <p>
+                    <p class="articletext">
                         Cura&ccedil;ao is the perfect destination for a summer trip into the Caribbean! With its beautiful beaches and unique culture this island has so much to offer you! Come swim, go diving, explore the diverse nature, experience the rich history, and eat amazing tropical foods! Cura&ccedil;ao has something for everyone to enjoy no matter the age group. Fly Cheap will get you there for the lowest prices on the market so you can spend more on your trip!            
-                    </p>           
-                        <figure>
+                    </p>    
+                    <footer class="articletext"> 
+                        Order the cheapest tickets on the market only here on Fly Cheap! To order please see our <a href="https://www.tui.nl/vliegtickets/curacao/">products</a> page.
+                    </footer>       
+                        <figure class="articleimage">
                             <a href="https://www.tui.nl/vliegtickets/curacao/">
                                 <img src="img/curacao.jpg" alt="Image of Curacao beach" title="Curacao Beach">
                             </a>
                             <figcaption>&copy;TBD Media Group</figcaption>
                         </figure>   
-                    <footer>
-                        Order the cheapest tickets on the market only here on Fly Cheap! To order please see our <a href="https://www.tui.nl/vliegtickets/curacao/">products</a> page.
-                    </footer>
                 </article>
 
                 <article>
                     <header>
-                        <h4>
+                        <h4 class="articletext">
                             Australia
                         </h4>
                     </header>
-                    <p>
+                    <p class="articletext">
                         Australia has one of the most diverse wildlife that you can go and see, from all sorts of exotic animals that are most likely <strong>poisonous</strong> to some of the best food and views in the world! Australia is the place to go if you want to explore everything nature has to offer and see the wildest animals. Besides its expansive wildlife Australia also has some of the most beautiful cities to go visit and explore to your hearts content!                              
                     </p>
-                    <figure>
+                    <footer class="articletext">
+                        Order the cheapest tickets on the market only here on Fly Cheap! To order please see our <a href="https://www.austravel.com/">products</a> page.
+                    </footer>
+                    <figure class="articleimage">
                         <a href="https://www.austravel.com/">
                         <img src="img/australia.jpg" alt="Image of city in Australia" title="City in Australia">
                         </a>
                         <figcaption>&copy;Unsplash Media</figcaption>
                     </figure>    
-                    <footer>
-                        Order the cheapest tickets on the market only here on Fly Cheap! To order please see our <a href="https://www.austravel.com/">products</a> page.
-                    </footer>
                 </article>
 
                 <article>
                     <header>
-                        <h4>
+                        <h4 class="articletext">
                             Canada
                         </h4>
                     </header>
-                    <p>
+                    <p class="articletext">
                         Canada is where you want to go if you want to see more cold weather compared to our previous two destinations, from big pine trees to white snow this is the Christmas lover&apos;s dream. Besides having a colder climate Canada also offers its specialty Maple Syrup you <em>have</em> to try if you visit! In Canada depending on the season you could also experience the beautiful sights of the Northern lights in the holiday season!
                     </p>
-                    <figure>
+                    <footer class="articletext">
+                        Order the cheapest tickets on the market only here on Fly Cheap! To order please see our <a href="https://www.tui.nl/reizen/canada/">products</a> page.
+                    </footer>
+                    <figure class="articleimage">
                         <a href="https://www.tui.nl/reizen/canada/">
                         <img src="img/canada.jpg" alt="Image of a city in Canada." title="City in Canada">
                         </a>
                         <figcaption>&copy;Commonwealth Fund</figcaption>
                     </figure> 
-                    <footer>
-                        Order the cheapest tickets on the market only here on Fly Cheap! To order please see our <a href="https://www.tui.nl/reizen/canada/">products</a> page.
-                    </footer>
                 </article>
             </section>
 
-            <section>
+            <section class="upcoming desktop-flex"> 
                 <aside>
                     <ol>
                         <li>
@@ -138,11 +164,11 @@
                 </aside>
             </section>
 
-            <footer>
+            <footer id="copyright-info" class="footer">
                 &copy;Jonathan Mauricio
             </footer>
-
-            <p>
+            
+            <p id="cookie">
                 Cookie Statement
             </p>
 
