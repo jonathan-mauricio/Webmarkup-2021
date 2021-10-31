@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: 600px)
 {
     #hamburger-menu
     {
         display: none;
     }
+    
+    #basenav
+    {
+        display: flex;
+        order: 2;
+        flex: 0 0 100%;
+    }
+
+
 }
 
 @media screen and (min-width: 1280px)
 {
+
+
+    #basenav
+    {
+        flex: 0 0 100%;
+    }
 
 }
 
@@ -21,37 +36,142 @@ body
     color: #FFF;
 }
 
-.basenav
+img
+{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    max-width: 750px;
+}
+
+.wrapper
+{
+    display: grid;
+    text-align: center;
+    height: 100vh;
+    grid-template-columns: 1fr .75fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "title nav"
+    "article1 article1"
+    "article2 article2"
+    "article3 article3"
+    "article4 article4"
+    "aside aside"
+    "footer footer";
+    grid-gap: 0.2rem;
+}
+
+.header
+{
+    grid-area: title;
+}
+
+.grid-article-5
+{
+    grid-area: article1;
+    text-align: center;
+}
+
+.grid-article-3
+{
+    grid-area: article2;
+}
+
+.grid-article-2
+{
+    grid-area: article3;
+}
+
+.grid-article-1
+{
+    grid-area: article4;
+}
+
+.grid-pictures 
+{
+    grid-area: aside;
+}
+
+.grid-footer
+{
+    grid-area: footer;
+}
+
+.upcoming , .articletext
+{
+    line-height: 1.5em;
+}
+ .icon, .basenav, .grid-article-4, .grid-article-6
 {
     display: none;
 }
 
+
+.basenav    
+{
+    background-color: #161CDA;
+}
+
+.basenav  a, ul
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.basenav li
+{
+    text-indent: 32px;
+    display: inline-block;
+}
+
+.header h1
+{
+    letter-spacing: 5px;
+}
+
 .hamburger-menu
 {
-    display: block;
+    text-align: left;
     position: relative;
-    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    grid-area: nav;
+}
+
+.hamburger-menu a
+{
+    text-decoration: none;
+    color: #F55105;
 }
 
 .hamburger-menu ul
 {
     opacity: 0;
+    background-color: lightblue;
+    border-radius: 25px;
+    list-style: none;
+    padding: 5px;
+    padding-left: 20px;
 }
 
 .hamburger-menu span
 {
-    display: block;
+    display: flex;
     position: relative;
     width: 15px;
     height: 2px;
     margin-bottom: 5px;
     background: white;
     z-index: 1;
+
 }
 
 .hamburger-menu input
 {
-    display: block;
+    display: flex;
     width: 40px;
     height: 30px;
     position: absolute;
@@ -87,5 +207,12 @@ body
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+@media print
+{
+    .body {
+        color: device-cmyk(0 22% 83% 0%)
+    }
 }
 
