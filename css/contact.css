@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 480px)
 {
     #hamburger-menu {
-        
+
         display: none;
     }
     
@@ -87,6 +87,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .header {
@@ -124,7 +126,7 @@ img {
 #formsubmit  {
 
     text-align: center;
-    background-color: lightseagreen;
+    background-color: #003EFF;
     font-weight: bold;
     font-size: 2em;
 }
